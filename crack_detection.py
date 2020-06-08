@@ -39,7 +39,7 @@ model = Sequential([
     Dense(1)
 ])
 
-epochs = 5
+epochs = 20
 model.compile(optimizer='adam',
               loss=tf.keras.losses.BinaryCrossentropy(from_logits=True),
               metrics=['accuracy'])
