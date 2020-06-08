@@ -16,9 +16,9 @@ def load_image(filename):
 # load an image and predict the class
 def run_example():
 	# load the image
-	img = load_image('1.jpg')
+	img = load_image('1.jpg') # enter the image file name to predict
 	# load model
-	model = tf.keras.models.load_model('model.h5')
+	model = tf.keras.models.load_model('model.h5') #loading the saved model
 	# predict the class
 	result = model.predict(img)
 
